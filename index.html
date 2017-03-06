@@ -6,13 +6,93 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Laboratoria</title>
   <link rel="stylesheet" href="assets/css/main.css">
-  <img src="assets/image/lab.svg">
+  <img src="assets/image/lab.svg" width="400" height="200px" class="imgcenter">
   <style type="text/css">
       body {background-color:white; font-family: sans-serif;}
       label {color: maroon; display:block; padding:5px;}
+      img.imgcenter{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border:none;
+      } 
+</style>
   </style>
 </head>
 <body >
+      <p><h2>Qué es Laboratoria</h2></p>
+      <p>Mucho más que un "centro de formación"
+         En Laboratoria identificamos jóvenes de bajos recursos con un potencial enorme y les damos la oportunidad de convertirse en desarrolladoras web. El resultado es una gran transformación para cada estudiante y una gran fuente de talento femenino de América Latina para el mundo tech.
+      </p>
+      <p><h4>Temas</h4></p>
+      <br>
+      <input type="button" value="Sprint 1" onclick="MensajeS1('textS1');return false"" >
+      <input type="button" value="Sprint 2" onclick="MensajeS2('textS2');return false">
+      <input type="button" value="Sprint 3" onclick="MensajeS3('textS3');return false">
+      <br/>
+      <div id="textS1">
+        <h2>Sprint 1: Introducción a Javascript</h2>
+        <ol>
+            <li>Fundamentosde Programación </li>
+            <li>Funciones</li>
+            <li>Arreglos </li>
+            <li>Objetos </li>
+        </ol>
+            <p><h2>Quizz</h2></p>
+            <p><h3>Existen dos tipos de funciones</h3></p>
+            <input type="radio" name="opcion" value="P11">Expresadas y declaradas
+            <br>
+            <input type="radio" name="opcion" value="P12">Explicitas y declaradas
+            <br>
+            <input type="radio" name="opcion" value="P13">Expresadas y derivadas
+            <p><h3>Elija una propiedad de los arreglos</h3></p>
+            <input type="radio" name="opcion" value="P21">Clear
+            <br>
+            <input type="radio" name="opcion" value="P22">pop 
+            <br>
+            <input type="radio" name="opcion" value="P23">add
+            <p><h3>un objeto tiene...... y .....</h3></p>
+            <input type="radio" name="opcion" value="P31">números y letras
+            <br>
+            <input type="radio" name="opcion" value="P32">partes y validaciones 
+            <br>
+            <input type="radio" name="opcion" value="P33">propiedades y valores
+            <br>
+             <p><button id="enviar" class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Enviar</button></p>
+      </div>
+      <div id="textS2">
+        <h2>Sprint 2: Introducción al desarrollo web y construcción de páginas  web</h2>
+        <ol>
+            <li>Ciclo de vida del desarrollo web y arquitectura básica cliente/servidor /Configuración del ambiente de trabajo e introducción al git </li>
+            <li>HTML y Javascript en el navegador </li>
+            <li>Manejo de comando básicos del git en la terminal </li>
+            <li>Pruebas unitarias </li>
+            <li>Git/Resolución de conflictos /Branching model </li>
+            <li>DOM </li></ol>
+            <p><h2>Quizz</h2></p>
+            <p><h3>Cuál es el comando para iniciar un repositorio desde la consola</h3></p>
+            <input type="radio" name="opcion" value="1">git init
+            <br>
+            <input type="radio" name="opcion" value="2">git ini .
+            <br>
+            <input type="radio" name="opcion" value="3">git add
+            <p><h3>Cuál es la finalidad de hacer una prueba unitaria</h3></p>
+            <input type="radio" name="opcion" value="1">Comprobar que el código funciona correctamente
+            <br>
+            <input type="radio" name="opcion" value="2">Darle valores a los parámetros de dicha funciones 
+            <br>
+            <input type="radio" name="opcion" value="3">No tiene ningún fin 
+            <p><h3>Qué significa DOM</h3></p>
+            <input type="radio" name="opcion" value="1">Dual Object Model
+            <br>
+            <input type="radio" name="opcion" value="2">Document Object Model 
+            <br>
+            <input type="radio" name="opcion" value="3">Document Obsolet Model
+            <br>
+             <p><button id="enviar" class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Enviar</button></p>
+      </div>
+      <div id="textS3"></div>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
